@@ -2,8 +2,9 @@
   "name": "multiaddr",
   "version": "3.0.1",
   "description": "multiaddr implementation (binary + string representation of network addresses)",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "babel": "babel dist -d lib",
     "lint": "aegir-lint",
     "test": "aegir-test",
     "test:node": "aegir-test node",
@@ -45,6 +46,8 @@
   },
   "devDependencies": {
     "aegir": "^11.0.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "buffer-loader": "0.0.1",
     "chai": "^4.1.2",
     "dirty-chai": "^2.0.1",
